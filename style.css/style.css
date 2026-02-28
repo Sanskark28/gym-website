@@ -2,19 +2,11 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-:root{
---primary:#ff4d6d;
---secondary:#6a5cff;
---accent:#00d4ff;
---dark:#0f172a;
---card:#1e293b;
+font-family:'Inter',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#0f172a,#020617);
+background:#0b0b0b;
 color:white;
 }
 
@@ -24,194 +16,132 @@ color:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 5%;
-background:rgba(15,23,42,0.8);
-backdrop-filter:blur(10px);
-position:sticky;
-top:0;
+padding:20px 8%;
+background:black;
 }
 
 .logo{
-font-size:28px;
-font-weight:700;
-background:linear-gradient(90deg,#ff4d6d,#6a5cff);
--webkit-background-clip:text;
-color:transparent;
+font-size:24px;
+font-weight:900;
 }
 
 nav a{
-margin:12px;
-color:white;
+margin:15px;
+color:#aaa;
 text-decoration:none;
-font-weight:500;
-transition:.3s;
 }
 
 nav a:hover{
-color:var(--primary);
+color:white;
+}
+
+.join-btn{
+background:white;
+color:black;
+padding:10px 20px;
+border:none;
+font-weight:600;
+cursor:pointer;
 }
 
 /* HERO */
 
 .hero{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
-url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e");
+height:90vh;
+background:url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48");
 background-size:cover;
-background-position:center;
+display:flex;
+align-items:center;
+padding-left:8%;
 }
 
-.hero h1{
-font-size:clamp(35px,6vw,70px);
-background:linear-gradient(90deg,#ff4d6d,#00d4ff);
--webkit-background-clip:text;
-color:transparent;
+.hero-text h1{
+font-size:70px;
+font-weight:900;
 }
 
-.hero p{
-font-size:clamp(16px,3vw,22px);
+.hero-text p{
 margin-top:10px;
-color:#cbd5e1;
+font-size:20px;
+color:#aaa;
 }
 
-.hero button{
-margin-top:25px;
-padding:14px 32px;
-font-size:18px;
+.hero-text button{
+margin-top:20px;
+padding:15px 30px;
+background:white;
+color:black;
 border:none;
-border-radius:30px;
-background:linear-gradient(90deg,#ff4d6d,#6a5cff);
-color:white;
-cursor:pointer;
-transition:.3s;
+font-size:18px;
 }
 
-.hero button:hover{
-transform:scale(1.1);
-box-shadow:0 0 20px rgba(255,77,109,.5);
+/* PROGRAMS */
+
+.programs{
+padding:80px 8%;
 }
 
-/* SECTION */
-
-section{
-padding:80px 5%;
+.program-container{
+display:flex;
+gap:20px;
+margin-top:30px;
+flex-wrap:wrap;
 }
 
-h2{
-text-align:center;
-font-size:36px;
-margin-bottom:40px;
-}
-
-/* TRAINERS */
-
-.trainer-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.trainer-card{
-background:var(--card);
-border-radius:15px;
+.program-card{
+background:#111;
+border-radius:10px;
 overflow:hidden;
-transition:.3s;
+width:300px;
 }
 
-.trainer-card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px rgba(106,92,255,.4);
-}
-
-.trainer-card img{
+.program-card img{
 width:100%;
-height:280px;
+height:200px;
 object-fit:cover;
 }
 
-.trainer-card h3{
+.program-card h3{
 padding:15px;
 }
 
-.trainer-card p{
-padding-bottom:15px;
-color:#94a3b8;
+/* MEMBERSHIP */
+
+.membership{
+padding:80px 8%;
 }
 
-/* PRICING */
-
-.pricing-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.price-card{
-background:var(--card);
-padding:30px;
-border-radius:15px;
-text-align:center;
-transition:.3s;
-}
-
-.price-card:hover{
-transform:scale(1.05);
-box-shadow:0 0 25px rgba(0,212,255,.4);
-}
-
-.price-card h1{
-font-size:40px;
-color:var(--accent);
-}
-
-.price-card button{
-margin-top:15px;
-padding:12px 25px;
-border:none;
-border-radius:25px;
-background:linear-gradient(90deg,#00d4ff,#6a5cff);
-color:white;
-cursor:pointer;
-}
-
-/* CONTACT */
-
-.contact form{
+.membership-container{
 display:flex;
-flex-direction:column;
-align-items:center;
-gap:15px;
+gap:20px;
+margin-top:30px;
+flex-wrap:wrap;
 }
 
-.contact input{
-padding:14px;
-width:min(400px,90%);
-border:none;
+.membership-card{
+background:#111;
+padding:30px;
 border-radius:10px;
-background:#020617;
-color:white;
+width:250px;
 }
 
-.contact button{
-padding:14px 30px;
+.premium{
+background:white;
+color:black;
+}
+
+.membership-card button{
+margin-top:15px;
+padding:10px 20px;
 border:none;
-border-radius:25px;
-background:linear-gradient(90deg,#ff4d6d,#6a5cff);
-color:white;
 cursor:pointer;
 }
 
 /* FOOTER */
 
 footer{
-text-align:center;
 padding:30px;
-background:#020617;
-color:#94a3b8;
+text-align:center;
+background:black;
+color:#aaa;
 }
